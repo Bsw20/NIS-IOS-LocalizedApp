@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  NIS-IOS-LocalizedApp
+
+  Created by Ярослав Карпунькин on 16.02.2021.
+  
+*/
+
+"LABEL_ONE" = "dernière";
+"LABEL_TWO" = "deuxième";
+"LABEL_THREE" = "troisième";
+"LABEL_FOUR" = "quatrième";
+"LABEL_FIVE" = "cinquième";
+"FLAG_FILE" = "flag_france";

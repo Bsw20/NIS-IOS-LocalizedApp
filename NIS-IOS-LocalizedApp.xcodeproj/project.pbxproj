@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24AF46C22D953EA350EE7471 /* Pods_NIS_IOS_LocalizedApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FDE14B9CDFB32DBAD76AAF /* Pods_NIS_IOS_LocalizedApp.framework */; };
+		302AAA9425D9A41D00482B08 /* LocalizedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302AAA9325D9A41D00482B08 /* LocalizedLabel.swift */; };
+		302AAA9C25D9AF3600482B08 /* StackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302AAA9B25D9AF3600482B08 /* StackView + Extension.swift */; };
+		302AAABC25DBF58600482B08 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 302AAABE25DBF58600482B08 /* Localizable.strings */; };
 		30D9490D25D9994E001834F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D9490C25D9994E001834F7 /* AppDelegate.swift */; };
 		30D9490F25D9994E001834F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D9490E25D9994E001834F7 /* SceneDelegate.swift */; };
 		30D9491125D9994E001834F7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D9491025D9994E001834F7 /* MainViewController.swift */; };
@@ -16,7 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		152117D10A96E91F23CA4CB5 /* Pods-NIS-IOS-LocalizedApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIS-IOS-LocalizedApp.release.xcconfig"; path = "Target Support Files/Pods-NIS-IOS-LocalizedApp/Pods-NIS-IOS-LocalizedApp.release.xcconfig"; sourceTree = "<group>"; };
+		302AAA9325D9A41D00482B08 /* LocalizedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedLabel.swift; sourceTree = "<group>"; };
+		302AAA9B25D9AF3600482B08 /* StackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView + Extension.swift"; sourceTree = "<group>"; };
+		302AAAB725DBF2C500482B08 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		302AAABD25DBF58600482B08 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		302AAAC025DBF5AC00482B08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		30D9490925D9994E001834F7 /* NIS-IOS-LocalizedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NIS-IOS-LocalizedApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D9490C25D9994E001834F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30D9490E25D9994E001834F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,8 +30,6 @@
 		30D9491525D99951001834F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30D9491825D99951001834F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30D9491A25D99951001834F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		660556B6C2FE52EF6A69AF0E /* Pods-NIS-IOS-LocalizedApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIS-IOS-LocalizedApp.debug.xcconfig"; path = "Target Support Files/Pods-NIS-IOS-LocalizedApp/Pods-NIS-IOS-LocalizedApp.debug.xcconfig"; sourceTree = "<group>"; };
-		70FDE14B9CDFB32DBAD76AAF /* Pods_NIS_IOS_LocalizedApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NIS_IOS_LocalizedApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,20 +37,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24AF46C22D953EA350EE7471 /* Pods_NIS_IOS_LocalizedApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		302AAA9625D9A42B00482B08 /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				302AAA9325D9A41D00482B08 /* LocalizedLabel.swift */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		302AAA9825D9A5C600482B08 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				30D9491025D9994E001834F7 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		302AAA9E25D9AF3A00482B08 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				302AAA9B25D9AF3600482B08 /* StackView + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		30D9490025D9994E001834F7 = {
 			isa = PBXGroup;
 			children = (
 				30D9490B25D9994E001834F7 /* NIS-IOS-LocalizedApp */,
 				30D9490A25D9994E001834F7 /* Products */,
-				B36CF8E9137636AF15F49C69 /* Pods */,
-				B01C39985BA2068B98B2FF05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,30 +88,15 @@
 			children = (
 				30D9490C25D9994E001834F7 /* AppDelegate.swift */,
 				30D9490E25D9994E001834F7 /* SceneDelegate.swift */,
-				30D9491025D9994E001834F7 /* MainViewController.swift */,
+				302AAA9825D9A5C600482B08 /* Controllers */,
+				302AAA9625D9A42B00482B08 /* Kit */,
+				302AAA9E25D9AF3A00482B08 /* Extensions */,
 				30D9491525D99951001834F7 /* Assets.xcassets */,
 				30D9491725D99951001834F7 /* LaunchScreen.storyboard */,
 				30D9491A25D99951001834F7 /* Info.plist */,
+				302AAABE25DBF58600482B08 /* Localizable.strings */,
 			);
 			path = "NIS-IOS-LocalizedApp";
-			sourceTree = "<group>";
-		};
-		B01C39985BA2068B98B2FF05 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				70FDE14B9CDFB32DBAD76AAF /* Pods_NIS_IOS_LocalizedApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B36CF8E9137636AF15F49C69 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				660556B6C2FE52EF6A69AF0E /* Pods-NIS-IOS-LocalizedApp.debug.xcconfig */,
-				152117D10A96E91F23CA4CB5 /* Pods-NIS-IOS-LocalizedApp.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,11 +106,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30D9491D25D99951001834F7 /* Build configuration list for PBXNativeTarget "NIS-IOS-LocalizedApp" */;
 			buildPhases = (
-				5E58EC72F06CEEB5F716022A /* [CP] Check Pods Manifest.lock */,
 				30D9490525D9994E001834F7 /* Sources */,
 				30D9490625D9994E001834F7 /* Frameworks */,
 				30D9490725D9994E001834F7 /* Resources */,
-				DF755B3F6C4BDE3B30F43891 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +140,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 30D9490025D9994E001834F7;
 			productRefGroup = 30D9490A25D9994E001834F7 /* Products */;
@@ -149,53 +158,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				30D9491925D99951001834F7 /* LaunchScreen.storyboard in Resources */,
+				302AAABC25DBF58600482B08 /* Localizable.strings in Resources */,
 				30D9491625D99951001834F7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5E58EC72F06CEEB5F716022A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NIS-IOS-LocalizedApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DF755B3F6C4BDE3B30F43891 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NIS-IOS-LocalizedApp/Pods-NIS-IOS-LocalizedApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NIS-IOS-LocalizedApp/Pods-NIS-IOS-LocalizedApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NIS-IOS-LocalizedApp/Pods-NIS-IOS-LocalizedApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30D9490525D9994E001834F7 /* Sources */ = {
@@ -204,17 +172,29 @@
 			files = (
 				30D9491125D9994E001834F7 /* MainViewController.swift in Sources */,
 				30D9490D25D9994E001834F7 /* AppDelegate.swift in Sources */,
+				302AAA9425D9A41D00482B08 /* LocalizedLabel.swift in Sources */,
 				30D9490F25D9994E001834F7 /* SceneDelegate.swift in Sources */,
+				302AAA9C25D9AF3600482B08 /* StackView + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		302AAABE25DBF58600482B08 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				302AAABD25DBF58600482B08 /* fr */,
+				302AAAC025DBF5AC00482B08 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		30D9491725D99951001834F7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				30D9491825D99951001834F7 /* Base */,
+				302AAAB725DBF2C500482B08 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -226,6 +206,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -287,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -340,7 +322,6 @@
 		};
 		30D9491E25D99951001834F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 660556B6C2FE52EF6A69AF0E /* Pods-NIS-IOS-LocalizedApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -360,7 +341,6 @@
 		};
 		30D9491F25D99951001834F7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 152117D10A96E91F23CA4CB5 /* Pods-NIS-IOS-LocalizedApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
